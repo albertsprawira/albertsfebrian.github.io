@@ -8976,7 +8976,9 @@ h1, h2, h3, h4, h5,
     transition: all 0.3s ease; }
     @media (max-width: 767.98px) {
       .project .overlay {
-        opacity: .2; } }
+        opacity: .65;
+        margin: 5px 0px;
+      } }
   .project .text {
     max-width: 80%;
     z-index: 1;
@@ -9582,6 +9584,11 @@ textarea.form-control {
       color: #000000;
       font-style: italic; }
 
+.modif-nav{
+  font-size: 1.5em;
+  padding:0.5em 0em;
+}
+
 #ftco-loader {
   position: fixed;
   width: 96px;
@@ -9672,3 +9679,10 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+@media(max-width:1024px){
+  .pict-project{
+    background-size: 130%;
+  }
+}

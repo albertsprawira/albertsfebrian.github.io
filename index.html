@@ -30,7 +30,7 @@
 	    <div class="container">
 	      <!-- <a class="navbar-brand" href="index.html"><span>R</span>onaldo</a> -->
 	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
+	        <span class="oi oi-menu modif-nav"></span>
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
@@ -177,16 +177,18 @@
     <section class="ftco-section ftco-no-pb goto-here" id="resume-section">
     	<div class="container">
     		<div class="row">
-    			<div class="col-md-3">
-				    <nav id="navi">
-					    <ul>
-					      <li><a href="#page-1">Education</a></li>
-					      <li><a href="#page-2">Experience</a></li>
-					      <li><a href="#page-3">Skills</a></li>
-					      <li><a href="#page-4">Awards</a></li>
-					    </ul>
-					  </nav>
-					</div>
+    			<div class="d-none d-md-block">
+					<div class="col-md-3">
+						<nav id="navi">
+							<ul>
+							  <li><a href="#page-1">Education</a></li>
+							  <li><a href="#page-2">Experience</a></li>
+							  <li><a href="#page-3">Skills</a></li>
+							  <li><a href="#page-4">Awards</a></li>
+							</ul>
+						  </nav>
+						</div>
+				</div>
 					<div class="col-md-9">
 					  <div id="page-1" class= "page one">
 					  	<h2 class="heading">Education</h2>
@@ -492,52 +494,54 @@
 								</div>
 					  	</div>
 					  </div>
-					  <div id="page-4" class= "page four">
-					    <h2 class="heading">Awards</h2>
-					    <div class="resume-wrap d-flex ftco-animate">
-					    	<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-ideas"></span>
-					    	</div>
-					    	<div class="text pl-3">
-		    					<span class="date">January 2020</span>
-		    					<h2>The 2nd Innovation Challenge Competition 2019 Finalist</h2>
-		    					<span class="position">Bina Nusantara University</span>
-		    					<p>Signature Verification Based on Siamese Neural Network</p>
-	    					</div>
-	    				</div>
-	    				<div class="resume-wrap d-flex ftco-animate">
-	    					<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-ideas"></span>
-					    	</div>
-					    	<div class="text pl-3">
-		    					<span class="date">August 2019</span>
-		    					<h2>Best Teaching Index Assistant</h2>
-		    					<span class="position">Bina Nusantara University</span>
-		    					<p>Best Teaching index for Assistant in Software Laboratory Center Even Term of Year 2018-2019</p>
-		    				</div>
-	    				</div>
-	    				<div class="resume-wrap d-flex ftco-animate">
-	    					<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-ideas"></span>
-					    	</div>
-					    	<div class="text pl-3">
-		    					<span class="date">February 2019</span>
-		    					<h2>Best Performing Assistant</h2>
-		    					<span class="position">Bina Nusantara University</span>
-		    					<p>Best Performing Assistant in Software Laboratory Center Odd Term of Year 2018-2019</p>
-		    				</div>
-	    				</div>
-	    				<!-- <div class="resume-wrap d-flex ftco-animate">
-	    					<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-ideas"></span>
-					    	</div>
-					    	<div class="text pl-3">
-		    					<span class="date">2014-2015</span>
-		    					<h2>Art &amp; Creative Director</h2>
-		    					<span class="position">Cambridge University</span>
-		    					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-		    				</div>
-	    				</div> -->
+					  <div class="col">
+						<div id="page-4" class= "page four">
+							<h2 class="heading">Awards</h2>
+							<div class="resume-wrap d-flex ftco-animate">
+								<div class="icon d-flex align-items-center justify-content-center">
+									<span class="flaticon-ideas"></span>
+								</div>
+								<div class="text pl-3">
+									<span class="date">January 2020</span>
+									<h2>The 2nd Innovation Challenge Competition 2019 Finalist</h2>
+									<span class="position">Bina Nusantara University</span>
+									<p>Signature Verification Based on Siamese Neural Network</p>
+								</div>
+							</div>
+							<div class="resume-wrap d-flex ftco-animate">
+								<div class="icon d-flex align-items-center justify-content-center">
+									<span class="flaticon-ideas"></span>
+								</div>
+								<div class="text pl-3">
+									<span class="date">August 2019</span>
+									<h2>Best Teaching Index Assistant</h2>
+									<span class="position">Bina Nusantara University</span>
+									<p>Best Teaching index for Assistant in Software Laboratory Center Even Term of Year 2018-2019</p>
+								</div>
+							</div>
+							<div class="resume-wrap d-flex ftco-animate">
+								<div class="icon d-flex align-items-center justify-content-center">
+									<span class="flaticon-ideas"></span>
+								</div>
+								<div class="text pl-3">
+									<span class="date">February 2019</span>
+									<h2>Best Performing Assistant</h2>
+									<span class="position">Bina Nusantara University</span>
+									<p>Best Performing Assistant in Software Laboratory Center Odd Term of Year 2018-2019</p>
+								</div>
+							</div>
+							<!-- <div class="resume-wrap d-flex ftco-animate">
+								<div class="icon d-flex align-items-center justify-content-center">
+									<span class="flaticon-ideas"></span>
+								</div>
+								<div class="text pl-3">
+									<span class="date">2014-2015</span>
+									<h2>Art &amp; Creative Director</h2>
+									<span class="position">Cambridge University</span>
+									<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+								</div>
+							</div> -->
+						  </div>
 					  </div>
 					</div>
 			  </div>
@@ -636,8 +640,8 @@
           </div>
         </div>
     		<div class="row no-gutters">
-    			<div class="col-md-4">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-1.jpg);">
+    			<div class="col-md-6 col-lg-4" >
+    				<div class="pict-project project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-1.jpg);">
 						<a href="https://github.com/albertsfebrian/AIG_Project" target="_blank">
 							<div class="overlay"></div>
 							<div class="text text-center p-4">
@@ -647,8 +651,8 @@
 						</a>
     				</div>
   				</div>
-  				<div class="col-md-4">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-2.jpg);">
+  				<div class="col-md-6 col-lg-4">
+    				<div class="pict-project project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-2.jpg);">
     					<div class="overlay"></div>
 	    				<div class="text text-center p-4">
 	    					<h3><a href="#projects-section">POS System - Test Progressive Assistant</a></h3>
@@ -657,8 +661,8 @@
     				</div>
   				</div>
 
-    			<div class="col-md-4">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-3.jpg);">
+    			<div class="col-md-6 col-lg-4">
+    				<div class="pict-project project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-3.jpg);">
     					<div class="overlay"></div>
 	    				<div class="text text-center p-4">
 	    					<h3><a href="#projects-section">BarbarKos - Test Progressive Assistant</a></h3>
@@ -666,8 +670,8 @@
 	    				</div>
     				</div>
     			</div>
-    			<div class="col-md-4">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-4.jpg);">
+    			<div class="col-md-6 col-lg-4">
+    				<div class="pict-project project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-4.jpg);">
 						<a href="https://www.asani.co.id/" target="_blank">
 							<div class="overlay"></div>
 							<div class="text text-center p-4">
@@ -677,8 +681,8 @@
 						</a>
     				</div>
     			</div>
-    			<div class="col-md-4">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-5.jpg);">
+    			<div class="col-md-6 col-lg-4">
+    				<div class="pict-project project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-5.jpg);">
     					<a href="https://play.google.com/store/apps/details?id=edu.bluejack18_2.lostandfound&hl=en" target="_blank">
 							<div class="overlay"></div>
 							<div class="text text-center p-4">
@@ -688,8 +692,8 @@
 						</a>
     				</div>
     			</div>
-    			<div class="col-md-4">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-6.jpg);">
+    			<div class="col-md-6 col-lg-4">
+    				<div class="pict-project project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-6.jpg);">
     					<div class="overlay"></div>
 	    				<div class="text text-center p-4">
 	    					<h3><a href="#projects-section">Student Backup - University Tools</a></h3>
