@@ -8678,9 +8678,8 @@ h1, h2, h3, h4, h5,
       color: #000000; }
       #navi li a.current {
         color: #3e64ff;
-        margin-left: 20px;
         position: relative; }
-        #navi li a.current:after {
+        /* #navi li a.current:after {
           position: absolute;
           top: 50%;
           left: -24px;
@@ -8690,7 +8689,7 @@ h1, h2, h3, h4, h5,
           -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-          background: #3e64ff; }
+          background: #3e64ff; } */
 
 .page {
   width: 100%;
