@@ -11,12 +11,10 @@ const Intro = () => {
                     <div className={`${styles['col-12']} ${styles['col-md-6']} ${styles['col-lg-8']} ${styles.content}`}>
                         <div>
                         <p data-aos="fade-up">
-                            Hi, My Name is Alberts Febrian Prawira, Graduated from Bina Nusantara University Majoring in
-                            Computer Science. I'm a Hard worker and Innovative programmer who wants to keep learning, and
-                            continue to challenging myself. 
+                            Hi, My Name is Alberts Febrian Prawira. I graduated from Bina Nusantara University with a Bachelor of Science degree in Information Technology.
                         </p>
                         <p data-aos="fade-up">
-                            I Based in Jakarta, Indonesia. Currently, I working as "Network Administrator and Technical Support" at Software Laboratory Center, Bina Nusantara University and I worked on several responsive website projects.
+                            I'm currently working as a Network Administrator and Technical Support in Software Laboratory Center at Bina Nusantara University which is located in Jakarta, Indonesia . I'm a full stack programmer and have had several projects on making responsive websites. I love learning and keep on challenging myself.
                         </p>
                         </div>
                     </div>

@@ -7,17 +7,17 @@ export const experienceList = [
         career:[
             {
                 title: "Teaching Assistant",
-                start: "September 2018",
-                end: "August 2019"
+                start: "01 September 2018",
+                end: "31 August 2019"
             },
             {
                 title: "Network Administrator and Technical Support Staff",
-                start: "September 2019",
-                end: "January 2020"
+                start: "01 September 2019",
+                end: "31 January 2020"
             },
             {
                 title: "Network Administrator and Techincal Support Officer",
-                start: "February 2020",
+                start: "01 February 2020",
                 end: "Present"
             }
         ]
