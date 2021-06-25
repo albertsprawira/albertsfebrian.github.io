@@ -1,0 +1,55 @@
+@use "logo" as *;
+@use "grids" as *;
+@use "pointer" as *;
+@use "variables" as *;
+@use "responsive" as *;
+
+.awardContainer{
+  padding-bottom: 2rem;
+  .award{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 0.5rem;
+    transition: 200ms all ease-in-out;
+    @include pointer;
+    .information{
+      @include informationContainer;
+      position: relative;
+      span{
+        cursor: inherit;
+      }
+    }
+    &.active{
+      margin-left: 1rem;
+    }
+    &.active .information::before{
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      border-left: 5px solid $primary-color;
+    }
+  }
+}
+.imgContainer{
+  position: relative;
+  min-height: 20rem;
+  .image{
+    top: 1rem;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 200ms all ease-in-out;
+    transform: scale(0);
+    &.show{
+      transform: scale(1);
+    }
+    @include media("md"){
+      top: 0;
+    }
+  }
+}
+

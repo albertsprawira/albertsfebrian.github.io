@@ -1,0 +1,26 @@
+@use "variables" as *;
+@use "pointer" as *;
+
+.error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    h1{
+        font-size: 5rem;
+    }
+    button{
+        @include pointer;
+        margin-top: 1rem;
+        border: none;
+        background-color: $secondary-color;
+        padding: 1rem 2rem;
+        color: white;
+        border-radius: 1000px;
+        transition: 200ms all ease-in-out;
+        &:hover{
+            background-color: $primary-color;
+        }
+    }
+}

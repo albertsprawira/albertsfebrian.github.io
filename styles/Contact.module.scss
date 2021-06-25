@@ -1,0 +1,46 @@
+@use "variables" as *;
+@use "responsive" as *;
+@use "grids" as *;
+@use "icon" as *;
+@use "headings" as *;
+
+.text{
+  span{
+    @include media("md"){
+      display: block;
+      text-align: center;
+    }
+    @include media("lg"){
+      font-size: 1.125rem;
+    }
+  };
+}
+.contact{
+  justify-content: center;
+  padding: 2.5rem 0rem;
+  .card{
+    text-align: center;
+    color: white;
+    background-color: $secondary-color;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 10px;
+    transition: 200ms all ease-in-out;
+    &:hover{
+      transform: scale(1.05);
+      background-color: darken($secondary-color,10%);
+      .icon{
+        background-color: darken($secondary-color,10%);
+      }
+    }
+
+    .icon{
+      @include icon($primary-color, white);
+      margin: auto;
+    }
+    span{
+      cursor: inherit;
+      padding: 1rem 0rem;
+    }
+  }
+}

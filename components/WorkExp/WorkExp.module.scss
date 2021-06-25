@@ -1,0 +1,20 @@
+@use "logo" as *;
+
+.company{
+  padding-bottom: 2rem;
+  .experience{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  
+    .image{
+      @include logoContainer;
+      position: relative;
+      overflow: hidden;
+      border-radius: 1000px;
+    }
+    .information{
+      @include informationContainer;
+    }
+  }
+}

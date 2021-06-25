@@ -1,0 +1,17 @@
+@use "logo" as *;
+
+.education{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 2rem;
+  .image{
+    @include logoContainer;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1000px;
+  }
+  .information{
+    @include informationContainer;
+  }
+}

@@ -1,0 +1,71 @@
+@use "variables" as *;
+@use "responsive" as *;
+@use "grids" as *;
+@use "icon" as *;
+@use "headings" as *;
+
+.projects{
+  justify-content: center;
+  padding-bottom: 2.5rem;
+  .card{
+    background-color: $secondary-color;
+    text-align: center;
+    color: white;
+    border-radius: 1rem;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: 200ms all ease-in-out;
+
+    // img{
+    //   object-fit: contain;
+    //   width: 100%;
+    //   height: 11rem;
+    // }
+
+    .image{
+      width: 100%;
+      height: 11rem;
+      position: relative;
+      @include media("md"){
+        height: 100%;
+      }
+    }
+    .detail{
+      background-color: rgba($secondary-color,0.9);
+      padding: 0.5rem;
+      transition: 200ms all ease-in-out;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      span{
+        cursor: pointer;
+      }
+    }
+
+    @include media("lg"){
+      height: 14rem;
+      &:hover{
+        transform: scale(1.05);
+        .detail{
+          opacity: 1;
+        }
+      }
+      .detail{
+        opacity: 0;
+        position: absolute;
+        top: 0;left: 0;bottom: 0;right: 0;
+        background-color: rgba($secondary-color,0.9);
+        transition: 200ms all ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      img{
+        height: 100%;
+      }
+    }
+    
+  }
+}
