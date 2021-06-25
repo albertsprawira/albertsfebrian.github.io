@@ -7,8 +7,8 @@ export default function Contact() {
   return (
     <ContentLayout header={"Contact"}>
       <div className={styles.text} data-aos="zoom-in-up">
-        <span>I am very interested in getting opportunities for collaboration or talking about technology in computer science.&nbsp;</span>
-        <span>So feel free to contact me with the platform below:</span>
+        <span>I'm very interested in getting opportunities for collaboration or discuss about technology in computer science.&nbsp;</span>
+        <span>Feel free to hit me up via any platform below:</span>
       </div>
       <div className={`${styles.row} ${styles.contact}`}>
         {
