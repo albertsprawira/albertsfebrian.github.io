@@ -1,0 +1,22 @@
+@use "variables" as *;
+@use "responsive" as *;
+@use "grids" as *;
+@use "responsive" as *;
+
+.skillList{
+  justify-content: center;
+  .skill{
+    text-align: center;
+    margin: 10px;
+    padding: 7px;
+    border-radius: 1000px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: $secondary-color;
+
+    @include media("md"){
+      font-size: 1.25rem;
+    }
+  }
+}

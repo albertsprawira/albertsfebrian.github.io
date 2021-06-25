@@ -1,0 +1,29 @@
+@use "responsive" as *;
+@use "sass:math";
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+$max-column : 12;
+@for $i from 1 through $max-column {
+    .col-#{$i}{
+        flex : 0 0 math.div(100%, math.div($max-column,$i));
+        //flex: 0 0 (100% / ($max-column/ $i));
+    }
+    .col-offset-#{$i}{
+        margin-left: math.div(100%, math.div($max-column,$i));
+        // margin-left: 100% / ($max-column / $i);
+    }
+}
+
+@each $name,$value in $mediaMap {
+    @for $i from 1 through $max-column {
+        .col-#{$name}-#{$i}{
+            @include media($name){
+                flex : 0 0 math.div(100%, math.div($max-column,$i));
+                // flex: 0 0 (100% / ($max-column/ $i));
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+$sm-device: 576px;
+$md-device: 768px;
+$lg-device: 1024px;
+$xl-device: 1200px;
+
+$mediaMap : (
+    "xs": "(max-width: #{$sm-device})",
+    "sm": "(min-width: #{$sm-device})",
+    "md": "(min-width: #{$md-device})",
+    "lg": "(min-width: #{$lg-device})",
+    "xl": "(min-width: #{$xl-device})",
+);
+
+@mixin media($size){
+    @media #{map-get($mediaMap, $size)} {
+        @content;
+    }
+}

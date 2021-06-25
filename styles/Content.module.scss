@@ -1,0 +1,33 @@
+@use "responsive" as *;
+@use "variables" as *;
+
+.content{
+    padding-bottom: 4rem;
+    @include media("md"){
+        padding-bottom: 0;
+        padding-top: 3.5rem;
+    }
+    
+    #header{
+        padding: 2.5rem 0rem;
+        text-transform: uppercase;
+        @include media("xs"){
+            position: relative;
+            left: -1rem;
+        }
+
+        div{
+            margin: 0;
+            padding: 0.5rem 2rem;
+            width: 80%;
+            background-color: $primary-color;
+            color: white;
+
+            @include media("md"){
+                margin: auto;
+                width: 50%;
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+@mixin icon($bg-color,$color){
+    height: 2.75rem;
+    width: 2.75rem;
+    background-color: $bg-color;
+    color: $color;
+    border-radius: 100%;
+    padding: 0.625rem;
+    transition: 200ms all ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
