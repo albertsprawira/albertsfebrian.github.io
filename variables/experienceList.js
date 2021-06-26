@@ -13,7 +13,7 @@ export const experienceList = [
             {
                 title: "Network Administrator and Technical Support Staff",
                 start: "01 September 2019",
-                end: "31 January 2020"
+                end: "29 January 2020"
             },
             {
                 title: "Network Administrator and Techincal Support Officer",

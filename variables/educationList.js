@@ -4,7 +4,7 @@ export const educationList = [
     {
         image: binus,
         name: "Bina Nusantara University",
-        information: "Bachelor degree, Computer Science",
+        information: "Bachelor's degree, Computer Science",
         yearStart : 2017,
         yearEnd : 2021,
         GPA: 3.91,
